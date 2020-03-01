@@ -54,7 +54,7 @@
 - 推荐、热门、同校板块设置，你想看的这里都有。
 ----
 ## 效果展示（部分）
-| ![](https://github.com/HeyJC/WeiDong/blob/master/images/image9.png?raw=true) | ![](https://github.com/HeyJC/WeiDong/blob/master/images/image10.png?raw=true) | ![](https://github.com/HeyJC/WeiDong/blob/master/images/image11.png?raw=true) | ![](https://github.com/HeyJC/WeiDong/blob/master/images/image12.png?raw=true) |
+| ![](https://imgchr.com/i/3gNCZQ) | ![](https://imgchr.com/i/3gtvxf) | ![](https://imgchr.com/i/3gtXGt) | ![](https://imgchr.com/i/3gNSsS) |
 |  ----  | ----  |  ----  | ----  |
 | ![](https://github.com/HeyJC/WeiDong/blob/master/images/image13.png?raw=true) | ![](https://github.com/HeyJC/WeiDong/blob/master/images/image50.png?raw=true) | ![](https://github.com/HeyJC/WeiDong/blob/master/images/image15.png?raw=true) | ![](https://github.com/HeyJC/WeiDong/blob/master/images/image16.png?raw=true) |
 | ![](https://github.com/HeyJC/WeiDong/blob/master/images/image51.png?raw=true) | ![](https://github.com/HeyJC/WeiDong/blob/master/images/image18.png?raw=true) | ![](https://github.com/HeyJC/WeiDong/blob/master/images/image19.png?raw=true) | ![](https://github.com/HeyJC/WeiDong/blob/master/images/image20.png?raw=true) |
