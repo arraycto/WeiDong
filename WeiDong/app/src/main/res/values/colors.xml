@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FCD008</color>
+    <color name="colorPrimaryDark">#FCD008</color>
+    <color name="colorAccent">#FCD008</color>
+
+    <color name="colorTheme">#FCD008</color>
+    <color name="colorThemePale">#FDECA0</color>
+    <color name="colorDark">#000106</color>
+    <color name="colorLight">#FEFEFE</color>
+    <color name="colorBack">#F8F8F8</color>
+    <color name="colorBackPale">#FAFBFA</color>
+    <color name="colorText">#4C4C4C</color>
+    <color name="colorDarkText">#313131</color>
+    <color name="colorDefaultText">#A0A0A0</color>
+
+    <color name="colorBotBarBack">#F7F7F7</color>
+    <color name="colorBotLine">#E5E5E5</color>
+    <color name="colorTopLine">#B1B1B1</color>
+
+    <color name="ThemeYellow">#FDAB2D</color>
+    <color name="ThemeGreen">#68CA78</color>
+    <color name="ThemeBlue">#4E9DED</color>
+    <color name="ThemePurple">#7B76DE</color>
+    <color name="ThemeOrange">#FD8D56</color>
+    <color name="ThemeBlack">#4C4C4C</color>
+</resources>

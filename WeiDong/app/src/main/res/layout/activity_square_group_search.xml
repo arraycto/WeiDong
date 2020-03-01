@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorLight"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SquareGroupSearchActivity">
+    <LinearLayout
+        android:background="@drawable/line_bot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/groupSearchCancelBtn"
+            android:paddingLeft="10dp"
+            android:layout_gravity="center"
+            android:padding="15dp"
+            android:src="@mipmap/btn_close"
+            android:gravity="center"
+            android:textColor="@color/colorText"
+            android:layout_width="45dp"
+            android:layout_height="45dp" />
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/issueSearch"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_edit_search"
+            android:layout_width="0dp"
+            android:layout_height="33dp"
+            android:layout_weight="1">
+            <ImageView
+                android:src="@mipmap/square_search"
+                android:contentDescription="@null"
+                android:padding="9dp"
+                android:layout_width="33dp"
+                android:layout_height="33dp" />
+            <EditText
+                android:id="@+id/groupSearchInput"
+                android:textColor="@color/colorText"
+                android:textSize="14sp"
+                android:gravity="start|center"
+                android:hint="小组名或地区"
+                android:maxLines="1"
+                android:imeOptions="actionSearch"
+                android:background="@null"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/groupSearchSubmitBtn"
+            android:padding="10dp"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/colorTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:padding="10dp"
+        android:background="@color/colorLight"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:contentDescription="@null"
+            android:src="@drawable/bg_btn_theme_circle"
+            android:scaleType="fitXY"
+            android:layout_width="3dp"
+            android:layout_height="18dp" />
+        <TextView
+            android:id="@+id/groupSeeInfo"
+            android:text="搜索结果如下"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/colorText"
+            android:layout_gravity="center_vertical"
+            android:textSize="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/groupSearchList"
+        android:background="@color/colorBack"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

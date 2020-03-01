@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBack"
+    android:orientation="vertical"
+    tools:context=".activity.SquareGroupAddActivity">
+    <RelativeLayout
+        android:background="@color/colorLight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/groupAddBackBtn"
+            android:padding="13dp"
+            android:contentDescription="@null"
+            android:src="@mipmap/btn_back"
+            android:layout_width="45dp"
+            android:layout_height="45dp" />
+        <TextView
+            android:text="@string/square_group_add"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorDark"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@color/colorLight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorDarkText"
+            android:text="小组头像"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/groupAddAvatar"
+            android:layout_toLeftOf="@+id/groupAddAvatarGo"
+            android:src="@drawable/bg_image_add"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+        <ImageView
+            android:id="@+id/groupAddAvatarGo"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="6dp"
+            android:src="@mipmap/btn_go_gray"
+            android:contentDescription="@null"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@color/colorLight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/groupAddNameT"
+            android:layout_marginRight="25dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorDarkText"
+            android:text="组名"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/groupAddName"
+            android:textColor="@color/colorText"
+            android:maxLines="1"
+            android:textSize="16sp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_toRightOf="@+id/groupAddNameT"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@color/colorLight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/groupAddDescT"
+            android:layout_marginRight="25dp"
+            android:paddingTop="10dp"
+            android:textColor="@color/colorDarkText"
+            android:text="简介"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/groupAddDesc"
+            android:textColor="@color/colorText"
+            android:textSize="16sp"
+            android:gravity="top|left"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_toRightOf="@+id/groupAddDescT"
+            android:background="@null"
+            android:minLines="4"
+            android:maxLines="4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@color/colorLight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/groupAddCityT"
+            android:layout_marginRight="25dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorDarkText"
+            android:text="城市"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/groupAddCity"
+            android:textColor="@color/colorText"
+            android:textSize="16sp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_toRightOf="@+id/groupAddCityT"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/groupAddOkBtn"
+        android:layout_margin="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/finish"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/colorLight"
+        android:background="@drawable/bg_btn_theme_circle"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SportHistoryActivity">
+    <RelativeLayout
+        android:background="@color/colorTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/sportHisBackBtn"
+            android:padding="12dp"
+            android:src="@mipmap/btn_back_light"
+            android:contentDescription="@null"
+            android:layout_width="45dp"
+            android:layout_height="45dp" />
+        <TextView
+            android:textSize="16sp"
+            android:textColor="@color/colorLight"
+            android:layout_centerInParent="true"
+            android:text="@string/sport_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/sportHisList"
+        android:background="@color/colorBack"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

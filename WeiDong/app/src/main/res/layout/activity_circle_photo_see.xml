@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CirclePhotoSeeActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBack"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorLight"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/circlePhotoSeeBackBtn"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:contentDescription="@null"
+                android:padding="13dp"
+                android:src="@mipmap/btn_back" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/circle_post_see"
+                android:textAlignment="center"
+                android:textColor="@color/colorDark"
+                android:textSize="16sp" />
+        </RelativeLayout>
+        <android.support.design.widget.CoordinatorLayout
+            android:id="@+id/circlePhotoSeeBlank"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBack"
+                app:elevation="0dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/colorLight"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    app:layout_scrollFlags="scroll">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:id="@+id/circlePhotoSeeUHead"
+                            android:layout_width="38dp"
+                            android:layout_height="38dp"
+                            android:layout_gravity="center_vertical"
+                            android:contentDescription="@null"
+                            android:src="@drawable/default_head" />
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/circlePhotoSeeUHead"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/circlePhotoSeeUName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:text="默认用户"
+                                android:textColor="@color/colorText"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:id="@+id/circlePhotoSeeUInfo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginTop="2dp"
+                                android:text="1级小白"
+                                android:textColor="@color/colorDefaultText"
+                                android:textSize="13sp" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                    <TextView
+                        android:id="@+id/circlePhotoSeeContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:lineSpacingMultiplier="1.2"
+                        android:text="默认内容"
+                        android:textColor="@color/colorText"
+                        android:textSize="16sp" />
+                    <com.lzy.ninegrid.NineGridView
+                        android:id="@+id/circlePhotoSeeNine"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        app:ngv_gridSpacing="7dp"
+                        app:ngv_maxSize="9"
+                        app:ngv_mode="grid" />
+                    <TextView
+                        android:id="@+id/circlePhotoSeeTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:text="2019/03/09 15:30"
+                        android:textColor="@color/colorDefaultText"
+                        android:textSize="13sp" />
+                    <TextView
+                        android:id="@+id/circlePhotoSeeInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="江西 · 南昌"
+                        android:textColor="@color/colorDefaultText"
+                        android:textSize="13sp" />
+                </LinearLayout>
+                <com.flyco.tablayout.SlidingTabLayout
+                    android:id="@+id/circlePhotoSeeNav"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/colorLight"
+                    app:tl_indicator_color="@color/colorTheme"
+                    app:tl_indicator_corner_radius="1.5dp"
+                    app:tl_indicator_height="3dp"
+                    app:tl_indicator_width="16dp"
+                    app:tl_textSelectColor="@color/colorDarkText"
+                    app:tl_textUnselectColor="@color/colorDefaultText"
+                    app:tl_textsize="16sp"
+                    app:tl_underline_color="@color/colorBotLine"
+                    app:tl_underline_height="1px" />
+            </android.support.design.widget.AppBarLayout>
+            <android.support.v4.view.ViewPager
+                android:id="@+id/circlePhotoSeePager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        </android.support.design.widget.CoordinatorLayout>
+    </LinearLayout>
+    <View
+        android:id="@+id/circlePhotoSeeCover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#59989898"
+        android:visibility="gone" />
+    <LinearLayout
+        android:id="@+id/circlePhotoSeeReplyBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/line_top_light"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:paddingTop="7dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="7dp">
+        <EditText
+            android:id="@+id/circlePhotoSeeReply"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/bg_edit"
+            android:gravity="start|top"
+            android:hint="我来回答"
+            android:maxLines="1"
+            android:paddingLeft="7dp"
+            android:paddingTop="5dp"
+            android:paddingRight="7dp"
+            android:paddingBottom="5dp"
+            android:textColorHint="@color/colorDefaultText"
+            android:textSize="15sp" />
+        <com.like.LikeButton
+            android:id="@+id/circlePhotoSeeLikeBtn"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            app:anim_scale_factor="2"
+            app:circle_start_color="@color/colorTheme"
+            app:icon_size="16dp"
+            app:icon_type="Star"
+            app:like_drawable="@mipmap/like_select"
+            app:unlike_drawable="@mipmap/like_normal" />
+        <com.like.LikeButton
+            android:id="@+id/circlePhotoSeeCollectBtn"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            app:anim_scale_factor="2"
+            app:circle_start_color="@color/colorTheme"
+            app:icon_size="16dp"
+            app:icon_type="Star"
+            app:like_drawable="@mipmap/collect_select"
+            app:unlike_drawable="@mipmap/collect_normal" />
+        <TextView
+            android:id="@+id/circlePhotoSeeReplySendBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="12dp"
+            android:enabled="false"
+            android:padding="7dp"
+            android:text="发布"
+            android:textColor="@color/colorDefaultText"
+            android:textSize="15sp"
+            android:visibility="gone" />
+    </LinearLayout>
+</RelativeLayout>

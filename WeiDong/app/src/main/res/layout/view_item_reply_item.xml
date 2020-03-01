@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="@color/colorLight"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/replyUHead"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/default_head"
+        android:contentDescription="@null"
+        android:layout_width="35dp"
+        android:layout_height="35dp" />
+    <LinearLayout
+        android:paddingTop="10dp"
+        android:paddingBottom="8dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/line_bot"
+        android:layout_marginLeft="7dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/replyUName"
+                android:text="Chase"
+                android:layout_gravity="center"
+                android:textColor="@color/colorText"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/replyTitle"
+                android:text="评论 8 楼："
+                android:textColor="@color/colorTheme"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/replyContent"
+                android:text="我真是个弟弟"
+                android:textColor="@color/colorText"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/replyInfo"
+                android:text="12楼 03-10 15:72"
+                android:layout_centerVertical="true"
+                android:textSize="12sp"
+                android:textColor="@color/colorDefaultText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:padding="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <com.like.LikeButton
+                    android:id="@+id/replyLikeBtn"
+                    app:icon_type="Star"
+                    app:circle_start_color="@color/colorTheme"
+                    app:like_drawable="@mipmap/like_select"
+                    app:unlike_drawable="@mipmap/like_normal"
+                    app:icon_size="16dp"
+                    app:anim_scale_factor="2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+                <TextView
+                    android:id="@+id/replyLikeNum"
+                    android:layout_gravity="center_vertical"
+                    android:text="95"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

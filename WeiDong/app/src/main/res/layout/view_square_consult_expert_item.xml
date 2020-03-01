@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/line_bot"
+    android:orientation="horizontal"
+    android:layout_marginLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="13dp"
+    android:paddingBottom="13dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/consultExpertAvatar"
+        android:src="@drawable/default_head"
+        android:contentDescription="@null"
+        android:layout_width="55dp"
+        android:layout_height="55dp" />
+    <RelativeLayout
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="62dp">
+        <!--第一行-->
+        <TextView
+            android:id="@+id/consultExpertName"
+            android:text="默认用户"
+            android:layout_alignParentTop="true"
+            android:textSize="16sp"
+            android:textColor="@color/colorText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <!--第二行-->
+        <RelativeLayout
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_centerVertical="true"
+                android:src="@mipmap/sport_info"
+                android:layout_width="14dp"
+                android:layout_height="14dp" />
+            <TextView
+                android:id="@+id/consultExpertInfo"
+                android:layout_marginLeft="18dp"
+                android:text="1级白菜"
+                android:textColor="@color/colorDefaultText"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <!--第三行-->
+        <TextView
+            android:id="@+id/consultExpertIntro"
+            android:text="默认简介"
+            android:layout_alignParentBottom="true"
+            android:textSize="14sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/colorText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <!--右上角按钮-->
+        <TextView
+            android:id="@+id/consultExpertGoBtn"
+            android:text="免费咨询"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="9dp"
+            android:paddingRight="9dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:textSize="12sp"
+            android:textColor="@color/colorLight"
+            android:background="@drawable/bg_btn_theme_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

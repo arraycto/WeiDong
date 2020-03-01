@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="grid_expected_size">120dp</dimen>
+    <dimen name="photo_add_padding_normal">20dp</dimen>
+    <dimen name="photo_add_padding_zero">20dp</dimen>
+</resources>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:background="@drawable/bg_popup_bot"
+        android:paddingTop="10dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingBottom="25dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center"
+                android:contentDescription="@null"
+                android:src="@drawable/bg_popup_line"
+                android:scaleType="fitXY"
+                android:layout_width="30dp"
+                android:layout_height="5dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/circlePhotoAddBtn"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:contentDescription="@null"
+                    android:background="@drawable/bg_popup_circle"
+                    android:src="@mipmap/circle_photo"
+                    android:padding="17dp"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp" />
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/colorDefaultText"
+                    android:textAlignment="center"
+                    android:text="@string/circle_photo_add"
+                    android:textSize="13sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/circleDiaryAddBtn"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:contentDescription="@null"
+                    android:background="@drawable/bg_popup_circle"
+                    android:src="@mipmap/circle_diary"
+                    android:padding="17dp"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp" />
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/colorDefaultText"
+                    android:textAlignment="center"
+                    android:text="@string/circle_diary_add"
+                    android:textSize="13sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center"
+                android:contentDescription="@null"
+                android:src="@mipmap/btn_close"
+                android:layout_width="15dp"
+                android:layout_height="30dp" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="cn.trunch.weidong">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- 写入扩展存储，向扩展卡写入数据，用于写入对象存储BOS数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- SD卡读取权限，用于写入对象存储BOS数据 -->
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" /> <!-- 用于加快GPS首次定位 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" /> <!-- 用于Android M及以上系统，申请加入忽略电池优化白名单 -->
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" /> <!-- 计歩 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <uses-feature android:name="android.hardware.sensor.accelerometer" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <uses-feature
+        android:name="android.hardware.sensor.stepcounter"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.sensor.stepdetector"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/FullTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".activity.SportPunchActivity"></activity>
+        <activity
+            android:name=".activity.WebActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".service.SportTimeService"
+            android:exported="false" />
+
+        <activity
+            android:name=".activity.EmptyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SettingIdentifyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SettingAccountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SettingSetupActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="Iz1ipT6hAI3TVkeCroQLWXVKHmkOGTom" />
+
+        <service
+            android:name="com.baidu.trace.LBSTraceService"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <activity
+            android:name=".activity.CircleDiarySeeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CirclePhotoSeeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CirclePhotoAddActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SportDiaryAddActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SportMapActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SportHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SportHistorySeeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SportDiaryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.SquareQuestionAddActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SquareQuestionSeeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SettingLoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SettingPhoneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SettingCodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.WelcomeActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.SquareConsultHomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SquareConsultAddActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SquareConsulExpertActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SquareConsultSeeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SquareQuestionSearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SquareGroupSeeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SquareGroupSearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SquareGroupAddActivity"
+            android:screenOrientation="portrait" /> <!-- 计步 -->
+        <service
+            android:name=".step.service.StepService"
+            android:priority="1000">
+            <intent-filter>
+
+                <!-- 系统启动完成后会调用 -->
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.DATE_CHANGED" />
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.intent.action.ACTION_TIME_TICK" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".step.pedometer.StepsDetectService"
+            android:priority="1000"
+            android:process="cn.bluemobi.dylan.step..pedometer.StepsDetectService">
+            <intent-filter>
+
+                <!-- 系统启动完成后会调用 -->
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.DATE_CHANGED" />
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.intent.action.ACTION_TIME_TICK" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

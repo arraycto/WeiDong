@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:background="@drawable/bg_dialog_popup"
+        android:layout_margin="15dp"
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:background="@drawable/line_bot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/imageAddTitle"
+                android:text="@string/square_question_photo"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/imageAddBtn"
+                android:text="@string/confirm"
+                android:textSize="16sp"
+                android:paddingLeft="15dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/colorTheme"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="选择图片"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/colorDefaultText"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_alignParentRight="true"
+                android:text="可以添加三张图片"
+                android:textColor="@color/colorDefaultText"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:paddingTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/bg_image_add"
+                android:id="@+id/imageAdd1"
+                android:contentDescription="@null"
+                android:layout_width="75dp"
+                android:layout_height="75dp" />
+            <ImageView
+                android:id="@+id/imageAdd2"
+                android:layout_toRightOf="@id/imageAdd1"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/bg_image_add"
+                android:contentDescription="@null"
+                android:layout_width="75dp"
+                android:layout_height="75dp" />
+            <ImageView
+                android:id="@+id/imageAdd3"
+                android:layout_toRightOf="@id/imageAdd2"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/bg_image_add"
+                android:contentDescription="@null"
+                android:layout_width="75dp"
+                android:layout_height="75dp" />
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CirclePhotoAddActivity">
+    <RelativeLayout
+        android:background="@drawable/line_bot"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/photoAddExitBtn"
+            android:layout_alignParentLeft="true"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:contentDescription="@null"
+            android:padding="15dp"
+            android:src="@mipmap/btn_close" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/circle_photo_add"
+            android:textAlignment="center"
+            android:textColor="@color/colorDark"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/photoAddSubmitBtn"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/send"
+            android:textColor="@color/colorTheme"
+            android:textSize="14sp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:padding="15dp"
+        android:orientation="vertical"
+        android:background="@color/colorLight"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <EditText
+            android:id="@+id/photoAddContent"
+            android:hint="分享点什么..."
+            android:gravity="start|top"
+            android:background="@null"
+            android:minLines="3"
+            android:maxLines="10"
+            android:scrollbars="vertical"
+            android:textSize="16sp"
+            android:lineSpacingMultiplier="1.2"
+            android:textColor="@color/colorText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <android.support.v7.widget.RecyclerView
+            android:elevation="0dp"
+            android:id="@+id/photoAddList"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorDefaultText"
+                android:textSize="16sp"
+                android:text="公开"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <com.suke.widget.SwitchButton
+                android:id="@+id/photoAddAnonymous"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:sb_checked_color="@color/colorTheme"
+                app:sb_checked="true"
+                android:layout_width="55dp"
+                android:layout_height="35dp" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

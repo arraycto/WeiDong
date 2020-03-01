@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/colorBack"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_marginBottom="15dp"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:background="@color/colorLight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/groupHeaderImg"
+                android:contentDescription="@null"
+                android:src="@drawable/bg_btn_light"
+                android:layout_width="match_parent"
+                android:layout_height="150dp" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_marginTop="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/groupSearchBtn"
+                android:background="@drawable/bg_btn_blue"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <ImageView
+                    android:padding="12dp"
+                    android:src="@mipmap/group_search"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp" />
+                <TextView
+                    android:text="发现运动小组"
+                    android:layout_marginLeft="-10dp"
+                    android:textColor="@color/colorLight"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/groupAddBtn"
+                android:background="@drawable/bg_btn_green"
+                android:gravity="center"
+                android:layout_marginLeft="15sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <ImageView
+                    android:padding="12dp"
+                    android:src="@mipmap/group_add"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp" />
+                <TextView
+                    android:text="创建运动小组"
+                    android:layout_marginLeft="-10dp"
+                    android:textColor="@color/colorLight"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:padding="15dp"
+        android:background="@color/colorLight"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:contentDescription="@null"
+            android:src="@drawable/bg_btn_theme_circle"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:layout_width="3dp"
+            android:layout_height="18dp" />
+        <TextView
+            android:text="推荐运动小组"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/colorDarkText"
+            android:layout_gravity="center_vertical"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

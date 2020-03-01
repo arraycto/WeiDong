@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SquareQuestionAddActivity">
+    <RelativeLayout
+        android:background="@drawable/line_bot"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <TextView
+            android:padding="10dp"
+            android:id="@+id/questionAddCancelBtn"
+            android:textColor="@color/colorDefaultText"
+            android:text="@string/cancel"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/notifyDialogTV"
+            android:text="@string/square_question_add"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorDark"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:padding="10dp"
+            android:id="@+id/questionAddNextBtn"
+            android:textColor="@color/colorDefaultText"
+            android:text="@string/next"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <cn.trunch.weidong.view.SlideViewPager
+        android:id="@+id/questionAddViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

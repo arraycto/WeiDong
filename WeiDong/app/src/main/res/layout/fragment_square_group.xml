@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorBack"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:background="@color/colorLight"
+        android:id="@+id/groupList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

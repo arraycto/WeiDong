@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/colorLight"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SquareConsulExpertActivity">
+    <RelativeLayout
+        android:background="@drawable/line_bot"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <ImageView
+            android:id="@+id/consultExpertBackBtn"
+            android:layout_alignParentLeft="true"
+            android:padding="13dp"
+            android:contentDescription="@null"
+            android:src="@mipmap/btn_back"
+            android:layout_width="45dp"
+            android:layout_height="45dp" />
+        <TextView
+            android:id="@+id/consultExpertTitle"
+            android:text="@string/square_consult_expert"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorDarkText"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/consultExpertList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+    <TextView
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        android:textColor="@color/colorDefaultText"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="注：系统默认用户达人类别"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

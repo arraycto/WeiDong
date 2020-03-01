@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorBack"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SettingLoginActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+        <!--<ImageView-->
+            <!--android:id="@+id/settingLoginExitBtn"-->
+            <!--android:src="@mipmap/btn_close"-->
+            <!--android:contentDescription="@null"-->
+            <!--android:padding="20dp"-->
+            <!--android:layout_width="55dp"-->
+            <!--android:layout_height="55dp" />-->
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:gravity="center"
+            android:textSize="22sp"
+            android:text="账号登录"
+            android:textColor="@color/colorDark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_margin="30dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <EditText
+                android:id="@+id/settingLoginAccount"
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:inputType="phone"
+                android:hint="手机号 / 学号 / 邮箱"
+                android:background="@drawable/bg_edit_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/settingLoginPassword"
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:inputType="textPassword"
+                android:hint="密码"
+                android:background="@drawable/bg_edit_bot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/settingLoginGoBtn"
+                android:text="登录"
+                android:textSize="15sp"
+                android:textColor="@color/colorLight"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/bg_btn_theme_pale_circle"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+            <RelativeLayout
+                android:layout_gravity="right"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp">
+                <TextView
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:id="@+id/settingLoginPhoneBtn"
+                    android:background="@drawable/bg_btn_theme_circle"
+                    android:textSize="13sp"
+                    android:textColor="@color/colorLight"
+                    android:text="手机免密登录"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <!--<TextView-->
+                    <!--android:textSize="14sp"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:textColor="@color/TextColor"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="忘记密码"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="match_parent" />-->
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:layout_marginBottom="45dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:gravity="center"
+                android:text="其他登录方式"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_marginTop="20sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/settingLoginQQBtn"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:contentDescription="@null"
+                        android:background="@drawable/bg_btn_light_circle"
+                        android:src="@mipmap/ic_qq"
+                        android:padding="15dp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/settingLoginWeChatBtn"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:contentDescription="@null"
+                        android:background="@drawable/bg_btn_light_circle"
+                        android:src="@mipmap/ic_wechat"
+                        android:padding="15dp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/settingLoginLinkedInBtn"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:contentDescription="@null"
+                        android:background="@drawable/bg_btn_light_circle"
+                        android:src="@mipmap/ic_linkedin"
+                        android:padding="15dp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

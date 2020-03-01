@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_margin="15dp"
+        android:padding="20dp"
+        android:background="@drawable/bg_dialog_popup"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:paddingBottom="10dp"
+            android:background="@drawable/line_bot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/labelAddTitle"
+                android:text="@string/square_question_label"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="输入标签"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/colorDefaultText"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_alignParentRight="true"
+                android:text="可以添加5个标签"
+                android:textColor="@color/colorDefaultText"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:paddingTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <me.gujun.android.taggroup.TagGroup
+                    android:id="@+id/labelAddGroup"
+                    app:atg_textColor="@color/colorTheme"
+                    app:atg_borderColor="@color/colorTheme"
+                    app:atg_checkedBackgroundColor="@color/colorTheme"
+                    app:atg_checkedBorderColor="@color/colorTheme"
+                    app:atg_pressedBackgroundColor="#CADCED"
+                    app:atg_textSize="15sp"
+                    app:atg_isAppendMode="true"
+                    app:atg_inputHint="添加标签"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </android.support.v4.widget.NestedScrollView>
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="10dp"
+    android:padding="15dp"
+    android:orientation="vertical"
+    android:background="@drawable/bg_btn_light"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/consultHomeContent"
+        android:text="默认内容"
+        android:textSize="14sp"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:textColor="@color/colorText"
+        android:lineSpacingMultiplier="1.2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/consultHomeInfo"
+            android:text="0人旁听 · 0人赞"
+            android:layout_centerVertical="true"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/consultHomeGoBtn"
+            android:text="免费旁听"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="9dp"
+            android:paddingRight="9dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:textSize="13sp"
+            android:textColor="@color/colorTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

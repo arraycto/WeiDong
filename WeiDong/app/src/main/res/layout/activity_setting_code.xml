@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ver="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SettingCodeActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/settingCodeExitBtn"
+            android:src="@mipmap/btn_back"
+            android:contentDescription="@null"
+            android:padding="20dp"
+            android:layout_width="55dp"
+            android:layout_height="55dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:gravity="center"
+            android:textSize="22sp"
+            android:text="输入验证码"
+            android:textColor="@color/colorDark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="16sp"
+                android:text="验证码已发送至 "
+                android:textColor="@color/colorDark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/settingCodePhone"
+                android:textSize="16sp"
+                android:text="***********"
+                android:textColor="@color/colorDark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <com.jyn.vcview.VerificationCodeView
+            android:id="@+id/settingCodeInput"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:vcv_et_bg="@drawable/bg_edit_code"
+            app:vcv_et_cursor="@drawable/bg_cursor"
+            app:vcv_et_inputType="number"
+            app:vcv_et_number="6"
+            app:vcv_et_text_color="@color/colorText"
+            app:vcv_et_text_size="6sp"
+            app:vcv_et_width="35dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/settingCodeResend"
+            android:padding="30dp"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:textColor="@color/colorTheme"
+            android:text="重新获取验证码"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

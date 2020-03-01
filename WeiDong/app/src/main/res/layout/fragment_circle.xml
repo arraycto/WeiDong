@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:background="@drawable/line_bot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/circleSettingGo"
+                android:layout_width="45dp"
+                android:layout_height="45dp">
+                <ImageView
+                    android:id="@+id/circleAvatar"
+                    android:background="@drawable/bg_head_circle"
+                    android:src="@drawable/default_head"
+                    android:contentDescription="@null"
+                    android:layout_centerInParent="true"
+                    android:padding="1px"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp" />
+            </RelativeLayout>
+            <com.flyco.tablayout.SlidingTabLayout
+                android:id="@+id/circleTabLayout"
+                android:layout_centerInParent="true"
+                android:background="@color/colorLight"
+                app:tl_indicator_corner_radius="1.5dp"
+                app:tl_indicator_height="3dp"
+                app:tl_indicator_width="16dp"
+                app:tl_indicator_color="@color/colorTheme"
+                app:tl_textsize="16sp"
+                app:tl_textUnselectColor="@color/colorDefaultText"
+                app:tl_textSelectColor="@color/colorDarkText"
+                app:tl_underline_color="@color/colorBotLine"
+                app:tl_underline_height="1px"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"/>
+        </RelativeLayout>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/circleViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/circleAddBtn"
+        android:src="@mipmap/btn_add"
+        app:fabSize="mini"
+        android:layout_marginBottom="55dp"
+        android:layout_marginRight="35dp"
+        android:layout_gravity="bottom|end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</FrameLayout>

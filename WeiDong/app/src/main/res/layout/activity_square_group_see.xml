@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/colorBack"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SquareGroupSeeActivity">
+    <RelativeLayout
+        android:background="@color/colorLight"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/groupSeeBackBtn"
+            android:padding="13dp"
+            android:contentDescription="@null"
+            android:src="@mipmap/btn_back"
+            android:layout_width="45dp"
+            android:layout_height="45dp" />
+        <TextView
+            android:text="@string/square_group_see"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorDark"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <!--<ImageView-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:id="@+id/groupSeeSetupBtn"-->
+            <!--android:padding="12dp"-->
+            <!--android:contentDescription="@null"-->
+            <!--android:src="@mipmap/setting_setup"-->
+            <!--android:layout_width="45dp"-->
+            <!--android:layout_height="45dp" />-->
+    </RelativeLayout>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/groupSeeAvatar"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bg_image_default"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+            <LinearLayout
+                android:background="@color/colorLight"
+                android:padding="12dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/groupSeeName"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorDarkText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:contentDescription="@null"
+                        android:src="@drawable/bg_btn_theme_circle"
+                        android:scaleType="fitXY"
+                        android:layout_width="3dp"
+                        android:layout_height="16dp" />
+                    <TextView
+                        android:id="@+id/groupSeeInfo"
+                        android:layout_marginLeft="3dp"
+                        android:textColor="@color/colorDefaultText"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="14sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:background="@color/colorLight"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:paddingBottom="1dp"
+                    android:background="@drawable/line_bot"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:background="@drawable/line_right"
+                        android:padding="12dp"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text="小组长:"
+                            android:textSize="14sp"
+                            android:textColor="@color/colorDefaultText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <ImageView
+                            android:id="@+id/groupSeeMasterAvatar"
+                            android:layout_marginTop="7dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/default_head"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:padding="12dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:text="小组成员:"
+                                android:textSize="14sp"
+                                android:textColor="@color/colorDefaultText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:id="@+id/groupSeeUserNum"
+                                android:layout_marginLeft="5dp"
+                                android:text="15"
+                                android:textSize="14sp"
+                                android:textColor="@color/colorText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:text="/无限制"
+                                android:textSize="14sp"
+                                android:textColor="@color/colorText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_marginTop="7dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_marginTop="7dp"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/default_head"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp" />
+                            <ImageView
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="7dp"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/default_head"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp" />
+                            <ImageView
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="7dp"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/default_head"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp" />
+                            <ImageView
+                                android:id="@+id/groupSeeMeAvatar"
+                                android:visibility="invisible"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="7dp"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/default_head"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:padding="12dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="小组今日共有 "
+                        android:textSize="14sp"
+                        android:textColor="@color/colorText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/groupSeeSportNum"
+                        android:text="0"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorTheme"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text=" 人参与运动"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:padding="12dp"
+                android:orientation="vertical"
+                android:background="@color/colorLight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:background="@color/colorLight"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:contentDescription="@null"
+                        android:src="@drawable/bg_btn_theme_circle"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:layout_width="3dp"
+                        android:layout_height="18dp" />
+                    <TextView
+                        android:text="小组简介"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/colorDarkText"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="15sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/groupSeeDesc"
+                    android:padding="10dp"
+                    android:textSize="14sp"
+                    android:lineSpacingMultiplier="1.1"
+                    android:textColor="@color/colorText"
+                    android:background="@drawable/bg_view_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:padding="12dp"
+                android:orientation="vertical"
+                android:background="@color/colorLight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:background="@color/colorLight"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:contentDescription="@null"
+                        android:src="@drawable/bg_btn_theme_circle"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:layout_width="3dp"
+                        android:layout_height="18dp" />
+                    <TextView
+                        android:text="最新活动"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/colorDarkText"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="15sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    android:background="@drawable/bg_view_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/groupMatchAvatar"
+                        android:layout_marginRight="10dp"
+                        android:src="@mipmap/ic_launcher"
+                        android:scaleType="centerCrop"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp" />
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/groupMatchName"
+                            android:text="活动主题: 环湖慢跑"
+                            android:textColor="@color/colorText"
+                            android:textSize="14sp"
+                            android:maxLines="1"
+                            android:ellipsize="end"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/groupMatchAddress"
+                            android:text="活动地点: 青山湖湖滨公园"
+                            android:textColor="@color/colorText"
+                            android:textSize="14sp"
+                            android:maxLines="1"
+                            android:ellipsize="end"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/groupMatchTime"
+                            android:text="活动时间: 2019/05/06 - 2019/05/14"
+                            android:textColor="@color/colorText"
+                            android:textSize="14sp"
+                            android:maxLines="1"
+                            android:ellipsize="end"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/groupMatchDesc"
+                            android:text="活动介绍: 环湖慢跑，观湖赏景，享受运动之美"
+                            android:textColor="@color/colorText"
+                            android:textSize="14sp"
+                            android:maxLines="1"
+                            android:ellipsize="end"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <Button
+        android:id="@+id/groupSeeFuncBtn"
+        android:textSize="16sp"
+        android:textColor="@color/colorLight"
+        android:background="@color/colorTheme"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+</LinearLayout>

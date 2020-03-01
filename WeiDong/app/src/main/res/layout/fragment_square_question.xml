@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorBack"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:background="@drawable/line_bot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/questionSearchBtn"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:background="@drawable/bg_edit_search"
+                android:layout_width="match_parent"
+                android:layout_height="33dp">
+                <ImageView
+                    android:src="@mipmap/square_search"
+                    android:contentDescription="@null"
+                    android:padding="9dp"
+                    android:layout_width="33dp"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:textColor="@color/colorDefaultText"
+                    android:textSize="14sp"
+                    android:gravity="start|center"
+                    android:text="搜索您的运动烦恼"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+        <com.jcodecraeer.xrecyclerview.XRecyclerView
+            android:id="@+id/questionList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/questionAddBtn"
+        android:src="@mipmap/btn_add"
+        app:fabSize="mini"
+        android:layout_marginBottom="55dp"
+        android:layout_marginRight="35dp"
+        android:layout_gravity="bottom|end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</FrameLayout>

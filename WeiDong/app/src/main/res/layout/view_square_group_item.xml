@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="@color/colorLight"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:paddingTop="13dp"
+        android:paddingBottom="13dp"
+        android:layout_marginLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@drawable/line_bot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/groupAvatar"
+            android:background="@drawable/bg_image_default"
+            android:contentDescription="@null"
+            android:layout_width="65dp"
+            android:layout_height="65dp" />
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="65dp">
+            <!--第一行-->
+            <RelativeLayout
+                android:layout_alignParentTop="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/groupName"
+                    android:text="默认组名"
+                    android:layout_alignParentTop="true"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/groupSite"
+                    android:text="默认地点"
+                    android:layout_alignParentRight="true"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <!--第二行-->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/groupInfo"
+                    android:text="默认简介"
+                    android:textSize="14sp"
+                    android:maxLines="2"
+                    android:layout_marginRight="70dp"
+                    android:lineSpacingExtra="1.2dp"
+                    android:minLines="2"
+                    android:ellipsize="end"
+                    android:textColor="@color/colorText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/groupNum"
+                    android:text="0人"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

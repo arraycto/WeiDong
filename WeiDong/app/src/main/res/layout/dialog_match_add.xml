@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:background="@drawable/bg_popup_bot_light"
+        android:padding="15dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:padding="8dp"
+            android:background="@color/colorLight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorDarkText"
+                android:text="活动图片："
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/matchAddAvatar"
+                android:layout_toLeftOf="@+id/matchAddAvatarGo"
+                android:src="@drawable/bg_image_add"
+                android:layout_width="70dp"
+                android:layout_height="70dp" />
+            <ImageView
+                android:id="@+id/matchAddAvatarGo"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="6dp"
+                android:src="@mipmap/btn_go_gray"
+                android:contentDescription="@null"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:padding="8dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/bg_btn_back_circle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/matchAddNameT"
+                android:layout_marginRight="25dp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorDarkText"
+                android:text="活动主题："
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/matchAddName"
+                android:textColor="@color/colorText"
+                android:maxLines="1"
+                android:textSize="16sp"
+                android:layout_toRightOf="@+id/matchAddNameT"
+                android:background="@null"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:padding="8dp"
+            android:layout_margin="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/matchAddTimeT"
+                android:layout_marginRight="25dp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorDarkText"
+                android:text="活动时间："
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/matchAddTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/matchAddTimeT"
+                android:background="@null"
+                android:maxLines="1"
+                android:textColor="@color/colorText"
+                android:textSize="16sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:padding="8dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/bg_btn_back_circle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/matchAddAddressT"
+                android:layout_marginRight="25dp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorDarkText"
+                android:text="活动地点："
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/matchAddAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/matchAddAddressT"
+                android:background="@null"
+                android:maxLines="1"
+                android:textColor="@color/colorText"
+                android:textSize="16sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:padding="8dp"
+            android:layout_margin="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/matchAddDescT"
+                android:layout_marginRight="25dp"
+                android:textColor="@color/colorDarkText"
+                android:text="活动简介："
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/matchAddDesc"
+                android:textColor="@color/colorText"
+                android:textSize="16sp"
+                android:gravity="top|left"
+                android:layout_toRightOf="@+id/matchAddDescT"
+                android:background="@null"
+                android:minLines="3"
+                android:maxLines="4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <Button
+            android:id="@+id/matchAddOkBtn"
+            android:layout_marginTop="20dp"
+            android:text="@string/finish"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/colorLight"
+            android:background="@drawable/bg_btn_theme_circle"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorBack"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SquareConsultHomeActivity">
+    <RelativeLayout
+        android:id="@+id/consultHomeTitleBar"
+        android:background="@drawable/line_bot"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <ImageView
+            android:id="@+id/consultHomeBackBtn"
+            android:padding="13dp"
+            android:layout_alignParentLeft="true"
+            android:contentDescription="@null"
+            android:src="@mipmap/btn_back"
+            android:layout_width="45dp"
+            android:layout_height="45dp" />
+        <TextView
+            android:id="@+id/consultExpertTitle"
+            android:text="@string/square_consult_home"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorDarkText"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_below="@+id/consultHomeTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--头部-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@color/colorLight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:padding="15dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                    <ImageView
+                        android:id="@+id/consultHomeAvatar"
+                        android:src="@drawable/default_head"
+                        android:contentDescription="@null"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp" />
+                    <RelativeLayout
+                        android:layout_marginLeft="10dp"
+                        android:padding="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/consultHomeName"
+                            android:text="达人"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <ImageView
+                            android:layout_alignParentBottom="true"
+                            android:src="@mipmap/sport_info"
+                            android:layout_width="14dp"
+                            android:layout_height="14dp" />
+                        <TextView
+                            android:id="@+id/consultHomeInfo"
+                            android:layout_marginLeft="18dp"
+                            android:layout_alignParentBottom="true"
+                            android:textColor="@color/colorDefaultText"
+                            android:textSize="14sp"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="17dp" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <TextView
+                    android:textSize="15sp"
+                    android:id="@+id/consultHomeIntro"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:textColor="@color/colorDarkText"
+                    android:lineSpacingMultiplier="1.2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_margin="15dp"
+                    android:padding="10dp"
+                    android:background="@drawable/bg_view_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:src="@mipmap/sport_medal"
+                            android:padding="6dp"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp" />
+                        <TextView
+                            android:id="@+id/consultHomeMedal"
+                            android:layout_gravity="center"
+                            android:textColor="@color/colorText"
+                            android:textSize="14sp"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:src="@mipmap/test_sport_field"
+                            android:padding="6dp"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp" />
+                        <TextView
+                            android:id="@+id/consultHomeSport"
+                            android:textColor="@color/colorText"
+                            android:layout_gravity="center"
+                            android:textSize="14sp"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:src="@mipmap/sport_honor"
+                            android:padding="6dp"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp" />
+                        <TextView
+                            android:id="@+id/consultHomeHonor"
+                            android:layout_gravity="center"
+                            android:textColor="@color/colorText"
+                            android:textSize="14sp"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:background="@color/colorBackPale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="18sp"
+                    android:text="TA回答的咨询"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <com.jcodecraeer.xrecyclerview.XRecyclerView
+                    android:id="@+id/consultHomeList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <Button
+        android:id="@+id/consultAddGoBtn"
+        android:text="免费咨询"
+        android:textSize="15sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorLight"
+        android:background="@drawable/bg_btn_theme_circle"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_marginBottom="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp" />
+</RelativeLayout>

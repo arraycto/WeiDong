@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SquareConsultSeeActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:background="@drawable/line_bot"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <ImageView
+                android:id="@+id/consultSeeBackBtn"
+                android:layout_alignParentLeft="true"
+                android:padding="13dp"
+                android:contentDescription="@null"
+                android:src="@mipmap/btn_back"
+                android:layout_width="45dp"
+                android:layout_height="45dp" />
+            <TextView
+                android:id="@+id/consultSeeTitle"
+                android:text="@string/square_consult_see"
+                android:layout_centerInParent="true"
+                android:textColor="@color/colorDarkText"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/consultSeeFinishBtn"
+                android:text="结束咨询"
+                android:layout_alignParentRight="true"
+                android:visibility="invisible"
+                android:padding="10dp"
+                android:gravity="center"
+                android:textColor="@color/colorTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.jcodecraeer.xrecyclerview.XRecyclerView
+                    android:id="@+id/consultSeeList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginBottom="55dp"
+                    android:padding="15dp"
+                    android:gravity="center"
+                    android:text="—  THE   END  —"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/consultSeeOperateBtn"
+        android:layout_gravity="bottom"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/colorLight"
+        android:background="@drawable/bg_btn_theme_circle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+</FrameLayout>

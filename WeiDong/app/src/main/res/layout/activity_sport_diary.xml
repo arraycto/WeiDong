@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SportDiaryActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:background="@color/colorLight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/diaryBackBtn"
+                android:padding="12dp"
+                android:src="@mipmap/btn_back"
+                android:contentDescription="@null"
+                android:layout_width="45dp"
+                android:layout_height="45dp" />
+            <TextView
+                android:textSize="16sp"
+                android:textColor="@color/colorDark"
+                android:layout_centerInParent="true"
+                android:text="@string/sport_diary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <com.flyco.tablayout.SlidingTabLayout
+            android:id="@+id/diaryTabLayout"
+            android:background="@color/colorLight"
+            app:tl_indicator_corner_radius="1.5dp"
+            app:tl_indicator_height="3dp"
+            app:tl_indicator_width="16dp"
+            app:tl_indicator_color="@color/colorTheme"
+            app:tl_textsize="16sp"
+            app:tl_textUnselectColor="@color/colorDefaultText"
+            app:tl_textSelectColor="@color/colorTheme"
+            app:tl_underline_color="@color/colorBotLine"
+            app:tl_underline_height="1px"
+            app:tl_tab_space_equal="true"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/diaryViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/diaryAddBtn"
+        android:src="@mipmap/btn_add"
+        app:fabSize="mini"
+        android:layout_marginBottom="75dp"
+        android:layout_marginRight="55dp"
+        android:layout_gravity="bottom|end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</FrameLayout>

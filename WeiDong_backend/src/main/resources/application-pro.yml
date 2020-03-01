@@ -1,0 +1,55 @@
+server:
+  port: 80
+  servlet:
+    context-path: /back
+
+spring:
+  messages:
+    encoding: utf-8
+  datasource:
+    url: jdbc:mysql://localhost:3306/werun?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&transformedBitIsBoolean=true
+    username: werundba
+    password: werunpro
+    driver-class-name: com.mysql.jdbc.Driver
+  servlet:
+    multipart:
+      max-file-size: 20MB
+  #  redis config
+  redis:
+    host: 127.0.0.1
+    password:
+    port: 6379
+    jedis:
+      pool:
+        #连接池最大活动连接
+        max-active: 30
+        #最大空闲链接
+        max-idle: 10
+        #超过时间
+        max-wait: 10ms
+        #连接池最小空闲连接
+        min-idle: 3
+
+web:
+  upload:
+    path: /werunImg
+  resources:
+    static-locations: classpath:/static/,classpath:/templates/,file:${web.upload.path}
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+
+
+FileOp:
+  upload:
+    path: /usr/local/werunImg/
+    headPath: /usr/local/werunImg/head/
+    goodPath: /usr/local/werunImg/good/
+    postPath: /usr/local/werunImg/post/
+  werunImg:
+    head: http://www.two2two.xyz/werunImg/head/
+    good: http://www.two2two.xyz/werunImg/good/
+    post: http://www.two2two.xyz/werunImg/post/
+
+
+#logging.level.com.werun.back.dao: debug

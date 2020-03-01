@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorBack"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CircleDiarySeeActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:background="@color/colorLight"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <ImageView
+                android:id="@+id/circleDiarySeeBackBtn"
+                android:padding="13dp"
+                android:layout_alignParentLeft="true"
+                android:contentDescription="@null"
+                android:src="@mipmap/btn_back"
+                android:layout_width="45dp"
+                android:layout_height="45dp" />
+            <TextView
+                android:text="@string/circle_post_see"
+                android:layout_centerInParent="true"
+                android:textColor="@color/colorDark"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <android.support.design.widget.AppBarLayout
+                app:elevation="0dp"
+                android:background="@color/colorBack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:background="@color/colorLight"
+                    app:layout_scrollFlags="scroll"
+                    android:padding="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/circleDiarySeeTitle"
+                        android:text="默认标题"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorDark"
+                        android:textSize="22sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <RelativeLayout
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp">
+                        <ImageView
+                            android:id="@+id/circleDiarySeeUHead"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/default_head"
+                            android:contentDescription="@null"
+                            android:layout_width="38dp"
+                            android:layout_height="38dp" />
+                        <RelativeLayout
+                            android:layout_toRightOf="@+id/circleDiarySeeUHead"
+                            android:layout_marginLeft="10dp"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/circleDiarySeeUName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginTop="0dp"
+                                android:text="默认用户"
+                                android:textColor="@color/colorText"
+                                android:textSize="16sp" />
+                            <TextView
+                                android:id="@+id/circleDiarySeeUInfo"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginTop="2dp"
+                                android:text="1级白菜"
+                                android:textColor="@color/colorDefaultText"
+                                android:textSize="13sp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </RelativeLayout>
+                        <!--<TextView-->
+                            <!--android:id="@+id/circleDiarySeeFollowBtn"-->
+                            <!--android:text=" + 关注"-->
+                            <!--android:layout_alignParentRight="true"-->
+                            <!--android:layout_marginLeft="10dp"-->
+                            <!--android:paddingLeft="7dp"-->
+                            <!--android:paddingRight="7dp"-->
+                            <!--android:paddingTop="4dp"-->
+                            <!--android:paddingBottom="4dp"-->
+                            <!--android:textSize="14sp"-->
+                            <!--android:textColor="@color/colorLight"-->
+                            <!--android:background="@drawable/bg_btn_theme"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content" />-->
+                    </RelativeLayout>
+                    <TextView
+                        android:id="@+id/circleDiarySeeInfo"
+                        android:text="0次浏览 · 0个关注"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/colorDefaultText"
+                        android:textSize="13sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <android.support.v4.widget.NestedScrollView
+                        android:layout_marginTop="25dp"
+                        android:layout_marginBottom="25dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <WebView
+                            android:id="@+id/circleDiarySeeWebView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                    </android.support.v4.widget.NestedScrollView>
+                    <TextView
+                        android:text="公开日记可以被大家看到，私密日记只能被自己看到哦"
+                        android:textSize="12sp"
+                        android:textColor="@color/colorDefaultText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_marginTop="15dp"
+                        android:text="自定义分类：默认分类"
+                        android:textSize="12sp"
+                        android:textColor="@color/colorDefaultText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/circleDiarySeeField"
+                        android:text="2019/03/09 15:30 "
+                        android:textColor="@color/colorDefaultText"
+                        android:textSize="13sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <com.flyco.tablayout.SlidingTabLayout
+                    android:id="@+id/circleDiarySeeNav"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/colorLight"
+                    app:tl_indicator_color="@color/colorTheme"
+                    app:tl_indicator_corner_radius="1.5dp"
+                    app:tl_indicator_height="3dp"
+                    app:tl_indicator_width="16dp"
+                    app:tl_textSelectColor="@color/colorDarkText"
+                    app:tl_textUnselectColor="@color/colorDefaultText"
+                    app:tl_textsize="16sp"
+                    app:tl_underline_color="@color/colorBotLine"
+                    app:tl_underline_height="1px" />
+            </android.support.design.widget.AppBarLayout>
+            <android.support.v4.view.ViewPager
+                android:id="@+id/circleDiarySeePager"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </android.support.design.widget.CoordinatorLayout>
+    </LinearLayout>
+    <View
+        android:visibility="gone"
+        android:id="@+id/circleDiarySeeCover"
+        android:background="#59989898"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/circleDiarySeeReplyBox"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:orientation="horizontal"
+        android:background="@drawable/line_top_light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/circleDiarySeeReply"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/bg_edit"
+            android:gravity="start|top"
+            android:hint="我来说一句"
+            android:maxLines="1"
+            android:paddingLeft="7dp"
+            android:paddingTop="5dp"
+            android:paddingRight="7dp"
+            android:paddingBottom="5dp"
+            android:textColorHint="@color/colorDefaultText"
+            android:textSize="15sp" />
+        <com.like.LikeButton
+            android:id="@+id/circleDiarySeeLikeBtn"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            app:anim_scale_factor="2"
+            app:circle_start_color="@color/colorTheme"
+            app:icon_size="16dp"
+            app:icon_type="Star"
+            app:like_drawable="@mipmap/like_select"
+            app:unlike_drawable="@mipmap/like_normal" />
+        <com.like.LikeButton
+            android:id="@+id/circleDiarySeeCollectBtn"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            app:anim_scale_factor="2"
+            app:circle_start_color="@color/colorTheme"
+            app:icon_size="16dp"
+            app:icon_type="Star"
+            app:like_drawable="@mipmap/collect_select"
+            app:unlike_drawable="@mipmap/collect_normal" />
+        <TextView
+            android:id="@+id/circleDiarySeeReplySendBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="12dp"
+            android:enabled="false"
+            android:padding="7dp"
+            android:text="发布"
+            android:textColor="@color/colorDefaultText"
+            android:textSize="15sp"
+            android:visibility="gone" />
+    </LinearLayout>
+</RelativeLayout>

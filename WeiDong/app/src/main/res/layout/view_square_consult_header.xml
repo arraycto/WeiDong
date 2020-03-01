@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/colorBack"
+    android:layout_margin="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/consultExpertClassify"
+        android:padding="10dp"
+        android:background="@color/colorLight"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:padding="5dp"
+            android:background="@color/colorLight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/consultHeaderF"
+                android:contentDescription="@null"
+                android:src="@drawable/bg_btn_theme_circle"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:layout_width="3dp"
+                android:layout_height="18dp" />
+            <TextView
+                android:text="运动达人分类"
+                android:layout_toRightOf="@id/consultHeaderF"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/colorDarkText"
+                android:layout_centerVertical="true"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout style="@style/SportFieldView">
+                <ImageView
+                    android:src="@mipmap/consult_c1"
+                    style="@style/SportFieldIcon" />
+                <TextView
+                    android:text="户外达人"
+                    style="@style/SportFieldText"/>
+            </LinearLayout>
+            <LinearLayout style="@style/SportFieldView">
+                <ImageView
+                    android:src="@mipmap/consult_c2"
+                    style="@style/SportFieldIcon" />
+                <TextView
+                    android:text="室内达人"
+                    style="@style/SportFieldText"/>
+            </LinearLayout>
+            <LinearLayout style="@style/SportFieldView">
+                <ImageView
+                    android:src="@mipmap/consult_c3"
+                    style="@style/SportFieldIcon" />
+                <TextView
+                    android:text="器材达人"
+                    style="@style/SportFieldText"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout style="@style/SportFieldView">
+                <ImageView
+                    android:src="@mipmap/consult_c4"
+                    style="@style/SportFieldIcon" />
+                <TextView
+                    android:text="增肌达人"
+                    style="@style/SportFieldText"/>
+            </LinearLayout>
+            <LinearLayout style="@style/SportFieldView">
+                <ImageView
+                    android:src="@mipmap/consult_c5"
+                    style="@style/SportFieldIcon" />
+                <TextView
+                    android:text="塑形达人"
+                    style="@style/SportFieldText"/>
+            </LinearLayout>
+            <LinearLayout style="@style/SportFieldView">
+                <ImageView
+                    android:src="@mipmap/consult_c6"
+                    style="@style/SportFieldIcon" />
+                <TextView
+                    android:text="减脂达人"
+                    style="@style/SportFieldText"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="5dp"
+        android:background="@color/colorLight"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:contentDescription="@null"
+            android:src="@drawable/bg_btn_theme_circle"
+            android:scaleType="fitXY"
+            android:layout_gravity="center_vertical"
+            android:layout_width="3dp"
+            android:layout_height="18dp" />
+        <TextView
+            android:text="相关推荐咨询"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/colorDarkText"
+            android:layout_gravity="center_vertical"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

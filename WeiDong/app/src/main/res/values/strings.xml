@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">微动</string>
+
+    <string name="sport">运动</string>
+    <string name="square">广场</string>
+    <string name="explore">发现</string>
+    <string name="circle">圈子</string>
+    <string name="setting">我的</string>
+
+    <string name="sport_history">运动历史</string>
+    <string name="sport_diary">运动日记</string>
+    <string name="sport_punch">运动计划</string>
+
+    <string name="square_question">问题</string>
+    <string name="square_consult">咨询</string>
+    <string name="square_match">活动</string>
+    <string name="square_group">小组</string>
+
+    <string name="square_question_add">添加问题</string>
+    <string name="square_question_see">问题详情</string>
+    <string name="square_question_bounty">问题赏金</string>
+    <string name="square_question_photo">问题图片</string>
+    <string name="square_question_label">问题标签</string>
+    <string name="square_question_bounty_amount">赏金数额:</string>
+    <string name="square_question_bounty_method">支付方式:</string>
+    <string name="square_question_bounty_pay">去支付</string>
+    <string name="square_question_anonymous">匿名</string>
+
+    <string name="square_consult_add">添加咨询</string>
+    <string name="square_consult_see">咨询详情</string>
+    <string name="square_consult_expert">运动达人</string>
+    <string name="square_consult_home">咨询主页</string>
+    <string name="square_consult_anonymous">匿名咨询</string>
+
+    <string name="square_group_add">创建小组</string>
+    <string name="square_group_see">小组详情</string>
+    <string name="square_group_search">发现小组</string>
+
+    <string name="circle_post_see">动态详情</string>
+    <string name="circle_post_add">添加动态</string>
+    <string name="circle_photo_add">发照片</string>
+    <string name="circle_diary_add">写日记</string>
+
+    <string name="setting_release">我的发布</string>
+    <string name="setting_follow">我的关注</string>
+    <string name="setting_collect">我的收藏</string>
+    <string name="setting_record">我的记录</string>
+    <string name="setting_wallet">我的钱包</string>
+    <string name="setting_order">我的订单</string>
+    <string name="setting_fans">我的粉丝</string>
+    <string name="setting_task">我的任务</string>
+    <string name="setting_account">我的资料</string>
+    <string name="setting_identify">我的认证</string>
+    <string name="setting_setup">设置</string>
+    <string name="setting_setup_del">账号和系统设置</string>
+
+    <string name="cancel">取消</string>
+    <string name="confirm">确定</string>
+    <string name="next">下一步</string>
+    <string name="finish">完成</string>
+    <string name="submit">提交</string>
+    <string name="release">发布</string>
+    <string name="send">发送</string>
+    <string name="save">保存</string>
+
+</resources>

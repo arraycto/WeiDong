@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorBack"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:padding="10dp"
+        android:background="@color/colorLight"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:text="价值 (元)"
+                android:textColor="@color/colorDefaultText"
+                android:textSize="13sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/consultSeeFee"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/colorText"
+                android:text="0"
+                android:textSize="22sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:text="旁听"
+                android:textColor="@color/colorDefaultText"
+                android:textSize="13sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/consultSeeAudit"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/colorText"
+                android:text="0"
+                android:textSize="22sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:text="点赞"
+                android:textColor="@color/colorDefaultText"
+                android:textSize="13sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/consultSeeScore"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/colorText"
+                android:text="0"
+                android:textSize="22sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:background="@drawable/bg_btn_light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:paddingBottom="10dp"
+            android:background="@drawable/line_bot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/consultSeeUHead"
+                android:src="@drawable/default_head"
+                android:contentDescription="@null"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+            <TextView
+                android:id="@+id/consultSeeUInfo"
+                android:layout_marginLeft="7dp"
+                android:textSize="17sp"
+                android:textColor="@color/colorDarkText"
+                android:text="默认用户 提问"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/consultSeeContent"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorText"
+            android:textSize="15sp"
+            android:lineSpacingMultiplier="1.1"
+            android:text="默认内容"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_marginTop="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.lzy.ninegrid.NineGridView
+                android:id="@+id/consultSeeImg"
+                app:ngv_singleImageSize="70dp"
+                app:ngv_singleImageRatio="1"
+                app:ngv_gridSpacing="3dp"
+                app:ngv_maxSize="3"
+                app:ngv_mode="fill"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/consultSeeInfo"
+                android:textSize="12sp"
+                android:text="03-09 21:18"
+                android:layout_gravity="bottom"
+                android:gravity="end"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorLight"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <EditText
+            android:id="@+id/questionAddContent"
+            android:hint="问题补充 (选填)"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:gravity="start|top"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </ScrollView>
+    <RelativeLayout
+        android:background="@drawable/line_top_light"
+        android:padding="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginLeft="8dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/questionAddBounty"
+            android:src="@mipmap/question_bounty"
+            android:contentDescription="@null"
+            android:background="@drawable/circle_theme"
+            android:padding="7dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <ImageView
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/questionAddBounty"
+            android:layout_centerVertical="true"
+            android:id="@+id/questionAddPhoto"
+            android:src="@mipmap/question_image"
+            android:contentDescription="@null"
+            android:background="@drawable/circle_theme"
+            android:padding="7dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <ImageView
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/questionAddPhoto"
+            android:layout_centerVertical="true"
+            android:id="@+id/questionAddLabel"
+            android:src="@mipmap/question_label"
+            android:contentDescription="@null"
+            android:background="@drawable/circle_theme"
+            android:padding="7dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:layout_toLeftOf="@id/questionAddAnonymous"
+            android:layout_marginRight="5dp"
+            android:text="@string/square_question_anonymous"
+            android:textSize="15sp"
+            android:textColor="@color/colorDefaultText"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.suke.widget.SwitchButton
+            android:layout_marginRight="8dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/questionAddAnonymous"
+            android:layout_centerVertical="true"
+            app:sb_checked_color="@color/colorTheme"
+            android:layout_width="55dp"
+            android:layout_height="36dp" />
+    </RelativeLayout>
+</LinearLayout>

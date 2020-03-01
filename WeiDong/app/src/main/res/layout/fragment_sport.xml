@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorLight"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:background="@color/colorTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/sportSettingGo"
+            android:layout_width="45dp"
+            android:layout_height="45dp">
+            <ImageView
+                android:id="@+id/sportAvatar"
+                android:background="@drawable/bg_head_circle"
+                android:src="@drawable/default_head"
+                android:contentDescription="@null"
+                android:layout_centerInParent="true"
+                android:padding="1px"
+                android:layout_width="32dp"
+                android:layout_height="32dp" />
+        </RelativeLayout>
+        <TextView
+            android:textSize="16sp"
+            android:textColor="@color/colorLight"
+            android:layout_centerInParent="true"
+            android:text="@string/sport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/sportHistoryBtn"
+            android:layout_toLeftOf="@id/sportDiaryBtn"
+            android:padding="12dp"
+            android:src="@mipmap/sport_history"
+            android:contentDescription="@null"
+            android:layout_width="45dp"
+            android:layout_height="45dp" />
+        <ImageView
+            android:id="@+id/sportDiaryBtn"
+            android:layout_alignParentRight="true"
+            android:padding="12dp"
+            android:src="@mipmap/sport_diary"
+            android:contentDescription="@null"
+            android:layout_width="45dp"
+            android:layout_height="45dp" />
+    </RelativeLayout>
+    <com.flyco.tablayout.SegmentTabLayout
+        android:id="@+id/sportTabLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        tl:tl_bar_color="@color/colorLight"
+        tl:tl_indicator_color="@color/colorTheme"
+        tl:tl_indicator_corner_radius="8dp"
+        tl:tl_tab_padding="20dp"/>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/sportViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorLight"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_gravity="center_vertical"
+                    android:layout_toLeftOf="@id/sportTimeCount"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/sportTimeH"
+                            android:text="/"
+                            android:gravity="right"
+                            android:minWidth="60dp"
+                            android:textSize="50sp"
+                            android:textColor="@color/colorTheme"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_marginLeft="10dp"
+                            android:text="时"
+                            android:textSize="16sp"
+                            android:textColor="@color/colorText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/sportTimeM"
+                            android:text="/"
+                            android:gravity="right"
+                            android:minWidth="60dp"
+                            android:textSize="50sp"
+                            android:textColor="@color/colorTheme"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_marginLeft="10dp"
+                            android:text="分"
+                            android:textSize="16sp"
+                            android:textColor="@color/colorText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+                <cn.trunch.weidong.view.SportTimeView
+                    android:id="@+id/sportTimeCount"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp" />
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/sportTimeMap"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/circle_theme"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_toLeftOf="@id/sportTimeStartBtn"
+                    android:src="@mipmap/sport_map" />
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/sportTimeStartBtn"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/bg_sport_time_btn"
+                    android:text="GO"
+                    android:gravity="center"
+                    android:textColor="@color/colorLight"
+                    android:textSize="24sp"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp" />
+                <TextView
+                    android:id="@+id/sportTimeStartInfo"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/sportTimeStartBtn"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:background="@drawable/bg_sport_time_info"
+                    android:text="暂停计时"
+                    android:textColor="@color/colorDefaultText"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </LinearLayout>
+        <android.support.v7.widget.CardView
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:padding="10dp"
+                    android:background="@color/colorLight"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:contentDescription="@null"
+                        android:src="@drawable/bg_btn_theme_circle"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:layout_width="3dp"
+                        android:layout_height="18dp" />
+                    <TextView
+                        android:text="建议路线"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/colorDarkText"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="16sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:background="@drawable/bg_image_default"
+                        android:padding="5dp"
+                        android:src="@mipmap/sport_route1"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp" />
+                    <LinearLayout
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text="北区田径场"
+                            android:textSize="15sp"
+                            android:textColor="@color/colorDark"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:text="全长0.39公里 · 12人打卡"
+                            android:textSize="14sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:padding="5dp"
+                        android:background="@drawable/bg_image_default"
+                        android:src="@mipmap/sport_route2"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp" />
+                    <LinearLayout
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text="环青山湖慢跑路线"
+                            android:textSize="15sp"
+                            android:textColor="@color/colorDark"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:text="全长10.22公里 · 7人打卡"
+                            android:textSize="14sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <!--<android.support.v7.widget.CardView-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:layout_marginRight="15dp"-->
+            <!--app:cardCornerRadius="5dp"-->
+            <!--app:cardElevation="3dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<LinearLayout-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+                <!--<LinearLayout-->
+                    <!--android:padding="10dp"-->
+                    <!--android:background="@color/colorLight"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content">-->
+                    <!--<ImageView-->
+                        <!--android:contentDescription="@null"-->
+                        <!--android:src="@drawable/bg_btn_theme_circle"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:scaleType="fitXY"-->
+                        <!--android:layout_width="3dp"-->
+                        <!--android:layout_height="18dp" />-->
+                    <!--<TextView-->
+                        <!--android:text="推荐运动"-->
+                        <!--android:layout_marginLeft="5dp"-->
+                        <!--android:textColor="@color/colorDarkText"-->
+                        <!--android:layout_gravity="center_vertical"-->
+                        <!--android:textSize="16sp"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content" />-->
+                <!--</LinearLayout>-->
+                <!--<LinearLayout-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_marginRight="10dp"-->
+                    <!--android:layout_marginBottom="10dp"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content">-->
+                    <!--<ImageView-->
+                        <!--android:background="@drawable/bg_image_default"-->
+                        <!--android:src="@mipmap/sport_run"-->
+                        <!--android:layout_width="70dp"-->
+                        <!--android:layout_height="70dp" />-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_marginLeft="10dp"-->
+                        <!--android:orientation="vertical"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content">-->
+                        <!--<TextView-->
+                            <!--android:text="来一场有氧的慢跑运动吧"-->
+                            <!--android:textSize="15sp"-->
+                            <!--android:textColor="@color/colorDark"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent" />-->
+                        <!--<TextView-->
+                            <!--android:layout_marginTop="5dp"-->
+                            <!--android:text="慢跑1小时 400千卡"-->
+                            <!--android:textSize="14sp"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content" />-->
+                    <!--</LinearLayout>-->
+                <!--</LinearLayout>-->
+                <!--<LinearLayout-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_marginRight="10dp"-->
+                    <!--android:layout_marginBottom="10dp"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content">-->
+                    <!--<ImageView-->
+                        <!--android:background="@drawable/bg_image_default"-->
+                        <!--android:src="@mipmap/sport_swim"-->
+                        <!--android:layout_width="70dp"-->
+                        <!--android:layout_height="70dp" />-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_marginLeft="10dp"-->
+                        <!--android:orientation="vertical"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content">-->
+                        <!--<TextView-->
+                            <!--android:text="天气这么好 - 不如去游个泳吧"-->
+                            <!--android:textSize="15sp"-->
+                            <!--android:textColor="@color/colorDark"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent" />-->
+                        <!--<TextView-->
+                            <!--android:layout_marginTop="5dp"-->
+                            <!--android:text="游泳30分钟 500千卡"-->
+                            <!--android:textSize="14sp"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content" />-->
+                    <!--</LinearLayout>-->
+                <!--</LinearLayout>-->
+            <!--</LinearLayout>-->
+        <!--</android.support.v7.widget.CardView>-->
+        <android.support.v7.widget.CardView
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:padding="10dp"
+                    android:background="@color/colorLight"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:contentDescription="@null"
+                        android:src="@drawable/bg_btn_theme_circle"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:layout_width="3dp"
+                        android:layout_height="18dp" />
+                    <TextView
+                        android:text="学校TOP10"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/colorDarkText"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="16sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <fragment
+                    android:id="@+id/sportSchoolRank"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:name="cn.trunch.weidong.fragment.SportSchoolRankFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
