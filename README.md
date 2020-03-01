@@ -64,7 +64,9 @@
 - 推荐、热门、同校板块设置，你想看的这里都有。
 ----
 ## 效果展示
-<img src="https://github.com/HeyJC/QRCodeLogin/blob/master/Images/app-scancode.gif?raw=true" width="250"/>|<img src="https://github.com/HeyJC/QRCodeLogin/blob/master/Images/app-scancode.gif?raw=true" width="250"/> |<img src="https://github.com/HeyJC/QRCodeLogin/blob/master/Images/app-scancode.gif?raw=true" width="250"/> |
+name | 价格 |  数量  
+-|-|-
+<img src="https://github.com/HeyJC/QRCodeLogin/blob/master/Images/app-scancode.gif?raw=true" width="250"/> | <img src="https://github.com/HeyJC/QRCodeLogin/blob/master/Images/app-scancode.gif?raw=true" width="250"/> | <img src="https://github.com/HeyJC/QRCodeLogin/blob/master/Images/app-scancode.gif?raw=true" width="250"/> |
 苹果 | $1 | 6 |
 草莓 | $1 | 7 |
 <img src="https://github.com/HeyJC/QRCodeLogin/blob/master/Images/app-scancode.gif?raw=true" width="250"/>
