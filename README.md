@@ -1,9 +1,10 @@
 # 微动
 ## 项目介绍
-- 一款以**学生**为主要用户群体的**运动社区APP**;
-- 项目曾获得中国计算机大赛国赛二等奖，现将该项目开源（注：仅供学习交流、严禁用于商业用途）;
-- 目前在该仓库中维护有完整的**移动端源码**、**服务器端源码**和**软件开发设计文档**;
-## 功能介绍
+- 一款以**学生**为主要用户群体的**运动社区APP**；
+- 项目曾获得中国计算机大赛国赛二等奖，现将该项目开源（注：仅供学习交流、严禁用于商业用途）；
+- 演示视频链接请戳[**优酷**](https://www.jianshu.com/p/d5a7a3081bbf)；
+- 目前在该仓库中维护有完整的**移动端源码**、**服务器端源码**和**软件开发设计文档**；
+## 功能概括
 **1.「运动监测」**
 - 实时运动计步，用运动步数进行每日打卡。
 - 灵活运动计时，记录自己每天的运动时长。
@@ -68,3 +69,4 @@
 |  ----  | ----  |  ----  | ----  |
 | ![](https://upload-images.jianshu.io/upload_images/15955542-ae1898781a012dfd.gif?imageMogr2/auto-orient/strip) | ![](https://upload-images.jianshu.io/upload_images/15955542-ae1898781a012dfd.gif?imageMogr2/auto-orient/strip) | ![](https://upload-images.jianshu.io/upload_images/15955542-ae1898781a012dfd.gif?imageMogr2/auto-orient/strip) | ![](https://upload-images.jianshu.io/upload_images/15955542-ae1898781a012dfd.gif?imageMogr2/auto-orient/strip) |
 | ![](https://upload-images.jianshu.io/upload_images/15955542-ae1898781a012dfd.gif?imageMogr2/auto-orient/strip) | ![](https://upload-images.jianshu.io/upload_images/15955542-ae1898781a012dfd.gif?imageMogr2/auto-orient/strip) | ![](https://upload-images.jianshu.io/upload_images/15955542-ae1898781a012dfd.gif?imageMogr2/auto-orient/strip) | ![](https://upload-images.jianshu.io/upload_images/15955542-ae1898781a012dfd.gif?imageMogr2/auto-orient/strip) |
+## 源码说明
